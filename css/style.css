@@ -1,11 +1,144 @@
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+}
+
+*::selection {
+  background-color: #f83292;
+  color: #fff;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+nav {
+  height: 60px;
+  box-shadow: 10px 2px 30px gray;
+  background-color: #fff;
+  padding: 20px 8%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  list-style-type: none;
+}
+
+.logo li {
+  display: inline-block;
+}
+
+.logo li a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.nav__items {
+  list-style-type: none;
+}
+
+.nav__items li {
+  display: inline-block;
+}
+
+.nav__items li a {
+  font-size: 17px;
+  font-weight: 500;
+  color: #333333;
+  margin-left: 25px;
+  transition: 0.8s;
+}
+
+.nav__items li a:hover {
+  color: #f83292;
+}
+
+/* banner area css */
+
+#banner {
+  margin-top: 60px;
+  background-image: url("../images/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner__content h1 {
+  width: 60%;
+  font-size: 40px;
+  font-weight: 800;
+  color: #333333;
+}
+
+.banner__content p {
+  font-size: 18px;
+  text-align: justify;
+  color: #666;
+  margin: 20px 0;
+}
+
+.banner__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__image img {
+  width: 90%;
+}
+
+.brand__color {
+  color: #f83292;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.brand__button {
+  padding: 15px 35px;
+  border-radius: 35px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(to right, #814096, #f83292);
+  transition: all 0.8s;
+  display: inline-block;
+}
+
+.brand__button:hover {
+  background-image: linear-gradient(90deg, #f83292, #814096);
+  letter-spacing: 1px;
 }
