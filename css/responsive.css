@@ -1,0 +1,53 @@
+@media only screen and (max-width: 1270px) {
+  .banner__content h1 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .brand__button {
+    padding: 11px 35px;
+    font-size: 13px;
+  }
+
+  .cards__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 973px) {
+  .brand__button {
+    font-size: 10px;
+  }
+
+  .banner__content h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .banner__content p {
+    font-size: 15px;
+  }
+
+  .section__heading {
+    font-size: 25px;
+  }
+
+  .card__heading {
+    font-size: 15px;
+  }
+
+  .card__content {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .cards__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .banner__section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
